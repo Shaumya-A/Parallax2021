@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Gallery</title>
     <link rel="stylesheet" type="text/css" href="Style/gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <script>
+        console.log(innerHeight);
+    </script>
 </head>
 <body>
 <div class="grid-container">
@@ -17,32 +21,107 @@
     </div>
     <div class="gallery-container">
         <div class="img-tab">
-            <img src="Assest/Gallery/Pets/black_lab_full_body_680.jpg" class="img">
+            <img src="Assest/Gallery/Pets/black_lab_full_body_680.jpg" class="img" onclick="openModal();currentSlide(1)">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Animals/elvira-lopez-lesser-panda.jpg" class="img">
+            <img src="Assest/Gallery/Animals/elvira-lopez-lesser-panda.jpg" class="img" onclick="openModal();currentSlide(2)">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Pets/tabby_cat_480.jpg" class="img">
+            <img src="Assest/Gallery/Pets/tabby_cat_480.jpg" class="img" onclick="openModal();currentSlide(3)">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Animals/ambro-jordi-rabbit-and-butterflies-drawing-by-ambr0-dchl3nj-fullview.jpg" class="img">
+            <img src="Assest/Gallery/Animals/ambro-jordi-rabbit-and-butterflies-drawing-by-ambr0-dchl3nj-fullview.jpg" class="img" onclick="openModal();currentSlide(4)">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Birds/Bird.jpg" class="img">
+            <img src="Assest/Gallery/Birds/Bird.jpg" class="img" onclick="openModal();currentSlide(5)">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Pets/hamster_480.jpg" class="img">
+            <img src="Assest/Gallery/Pets/hamster_480.jpg" class="img" onclick="openModal();currentSlide(6)">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Birds/Bird4.jpg" class="img">
+            <img src="Assest/Gallery/Birds/Bird4.jpg" class="img" onclick="openModal();currentSlide(7)">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Pets/cocker_spaniel_body_680.jpg" class="img">
+            <img src="Assest/Gallery/Pets/cocker_spaniel_body_680.jpg" class="img" onclick="openModal();currentSlide(8)">
         </div>
     </div>
     <div class="footer-div">Footer</div>
 </div>
+
+<div id="preview" class="preview">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="preview-content">
+        <div class="content">
+            <img src="Assest/Gallery/Pets/black_lab_full_body_680.jpg" class="enlarg-img">
+            <p class="description">
+                Size: 50cm x 35cm <br>
+                Original: Sold <br>
+                Giclée Prints: Unavailable <br>
+                Unison soft pastels, Pan Pastels, Faber Castell Pitt, <br>
+                 Giaconda and Derwent pastel pencils on <br>
+                 Clairefontaine Pastelmat. <br>
+                Subject: Rover, painted using multiple reference <br> photos given by client. <br>
+            </p>
+            <button class="btn-buy">Animals</button>
+        </div>
+        <div class="content">
+            <h1>2</h1>
+            <img src="Assest/Gallery/Animals/elvira-lopez-lesser-panda.jpg" style="width:100%">
+        </div>
+        <div class="content">
+            <h1>3</h1>
+            <img src="Assest/Gallery/Pets/tabby_cat_480.jpg" style="width:100%">
+        </div>
+        <div class="content">
+            <h1>4</h1>
+            <img src="Assest/Gallery/Animals/ambro-jordi-rabbit-and-butterflies-drawing-by-ambr0-dchl3nj-fullview.jpg" style="width:100%">
+        </div>
+        <div class="content">
+            <h1>5</h1>
+            <img src="Assest/Gallery/Birds/Bird.jpg" style="width:100%">
+        </div>
+        <div class="content">
+            <h1>6</h1>
+            <img src="Assest/Gallery/Pets/hamster_480.jpg" style="width:100%">
+        </div>
+        <div class="content">
+            <h1>7</h1>
+            <img src="Assest/Gallery/Birds/Bird4.jpg" style="width:100%">
+        </div>
+        <div class="content">
+            <h1>8</h1>
+            <img src="Assest/Gallery/Pets/cocker_spaniel_body_680.jpg" style="width:100%">
+        </div>
+    </div>
+</div>
+
+<script>
+    function openModal() {
+        document.getElementById("preview").style.display = "block";
+    }
+// closee
+    function closeModal() {
+        document.getElementById("preview").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("content");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+</script>
 
 </body>
 </html>
