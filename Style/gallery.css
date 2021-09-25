@@ -12,8 +12,7 @@
     grid-gap: 10px;
     padding: 10px;
     background-color: white;
-    /* background-color: #C4C4C4; */
-    /* opacity: 0.5; */
+
 }
 
 .grid-container > div {
@@ -51,8 +50,6 @@
 .gallery-container {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    border-style: solid;
-    border-color: red;
 }
 .img-tab {
     padding: 0px;
@@ -61,8 +58,6 @@
     text-align: center;
     height: 320px;
     border-radius: 28px;
-    border-style: solid;
-    border-color: red;
 }
 
 .img {
@@ -115,7 +110,7 @@ img:hover {
 }
 
 .content {
-    display: none;
+    display: block;
     width: 860px;
     height: 1006px;
 }
@@ -124,7 +119,7 @@ img:hover {
     cursor: pointer;
 }
 
-.enlarg-img {
+#enlarg-img {
     width: 328px; 
     height: 480px;
     margin: 10px 266px;
@@ -132,7 +127,7 @@ img:hover {
 
 .description {
     margin: 10px 266px;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', serif;
     font-size: 24px;
 }
 
@@ -142,7 +137,7 @@ img:hover {
     text-align: center;
     text-decoration: none;
     font-size: 24px;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     cursor: pointer;
     width: 222px;
     height: 66px;

@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <title>Gallery</title>
     <link rel="stylesheet" type="text/css" href="Style/gallery.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <script src="Scripts/gallery.js"></script>
 </head>
+
 <body onload="Start()">
+
 <div class="grid-container">
     <div class="header">header</div>
     <div class="catergories">
@@ -20,38 +23,38 @@
     </div>
     <div class="gallery-container">
         <div class="img-tab">
-            <img src="Assest/Gallery/Pets/Pet1.jpg" class="img" onclick="openModal();currentSlide(1)">
+            <img src="Assest/Gallery/Pets/Pet1.jpg" class="img" onclick=" openModal(this)" alt="">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Animals/Animal8.jpg" class="img" onclick="openModal();currentSlide(2)">
+            <img src="Assest/Gallery/Animals/Animal8.jpg" class="img" onclick="openModal(this)" alt="">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Pets/Pet8.jpg" class="img" onclick="openModal();currentSlide(3)">
+            <img src="Assest/Gallery/Pets/Pet8.jpg" class="img" onclick="openModal(this)" alt="">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Animals/Animal4.jpg" class="img" onclick="openModal();currentSlide(4)">
+            <img src="Assest/Gallery/Animals/Animal4.jpg" class="img" onclick="openModal(this)" alt="">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Birds/Bird8.jpg" class="img" onclick="openModal();currentSlide(5)">
+            <img src="Assest/Gallery/Birds/Bird8.jpg" class="img" onclick="openModal(this)" alt="">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Pets/Pet6.jpg" class="img" onclick="openModal();currentSlide(6)">
+            <img src="Assest/Gallery/Pets/Pet6.jpg" class="img" onclick="openModal(this)" alt="">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Birds/Bird4.jpg" class="img" onclick="openModal();currentSlide(7)">
+            <img src="Assest/Gallery/Birds/Bird4.jpg" class="img" onclick="openModal(this)" alt="">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Pets/Pet5.jpg" class="img" onclick="openModal();currentSlide(8)">
+            <img src="Assest/Gallery/Pets/Pet5.jpg" class="img" onclick="openModal(this)"  alt="">
         </div>
     </div>
     <div class="footer-div">Footer</div>
 </div>
 
 <div id="preview" class="preview">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
     <div class="preview-content">
         <div class="content">
-            <img src="Assest/Gallery/Pets/Pet1.jpg" class="enlarg-img">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <img src="" id="enlarg-img" alt="">
             <p class="description">
                 Size: 50cm x 35cm <br>
                 Original: Sold <br>
@@ -61,66 +64,39 @@
                  Clairefontaine Pastelmat. <br>
                 Subject: Rover, painted using multiple reference <br> photos given by client. <br>
             </p>
-            <button class="btn-buy">Animals</button>
+            <button class="btn-buy">Buy</button>
         </div>
-        <div class="content">
-            <h1>2</h1>
-            <img src="Assest/Gallery/Animals/Animal8.jpg" style="width:100%">
-        </div>
-        <div class="content">
-            <h1>3</h1>
-            <img src="Assest/Gallery/Pets/Pet8.jpg" style="width:100%">
-        </div>
-        <div class="content">
-            <h1>4</h1>
-            <img src="Assest/Gallery/Animals/Animal4.jpg" style="width:100%">
-        </div>
-        <div class="content">
-            <h1>5</h1>
-            <img src="Assest/Gallery/Birds/Bird8.jpg" style="width:100%">
-        </div>
-        <div class="content">
-            <h1>6</h1>
-            <img src="Assest/Gallery/Pets/Pet6.jpg" style="width:100%">
-        </div>
-        <div class="content">
-            <h1>7</h1>
-            <img src="Assest/Gallery/Birds/Bird4.jpg" style="width:100%">
-        </div>
-        <div class="content">
-            <h1>8</h1>
-            <img src="Assest/Gallery/Pets/Pet5.jpg" style="width:100%">
-        </div>
+<!--        </div>-->
+<!--        <div class="content">-->
+<!--            <h1>2</h1>-->
+<!--            <img src="Assest/Gallery/Animals/Animal8.jpg" style="width:100%">-->
+<!--        </div>-->
+<!--        <div class="content">-->
+<!--            <h1>3</h1>-->
+<!--            <img src="Assest/Gallery/Pets/Pet8.jpg" style="width:100%">-->
+<!--        </div>-->
+<!--        <div class="content">-->
+<!--            <h1>4</h1>-->
+<!--            <img src="Assest/Gallery/Animals/Animal4.jpg" style="width:100%">-->
+<!--        </div>-->
+<!--        <div class="content">-->
+<!--            <h1>5</h1>-->
+<!--            <img src="Assest/Gallery/Birds/Bird8.jpg" style="width:100%">-->
+<!--        </div>-->
+<!--        <div class="content">-->
+<!--            <h1>6</h1>-->
+<!--            <img src="Assest/Gallery/Pets/Pet6.jpg" style="width:100%">-->
+<!--        </div>-->
+<!--        <div class="content">-->
+<!--            <h1>7</h1>-->
+<!--            <img src="Assest/Gallery/Birds/Bird4.jpg" style="width:100%">-->
+<!--        </div>-->
+<!--        <div class="content">-->
+<!--            <h1>8</h1>-->
+<!--            <img src="Assest/Gallery/Pets/Pet5.jpg" style="width:100%">-->
+<!--        </div>-->
     </div>
 </div>
-
-<script>
-    function openModal() {
-        document.getElementById("preview").style.display = "block";
-    }
-// closee
-    function closeModal() {
-        document.getElementById("preview").style.display = "none";
-    }
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("content");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slides[slideIndex-1].style.display = "block";
-    }
-</script>
-
+</div>
 </body>
 </html>
