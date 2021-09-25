@@ -2,9 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Choke Stories</title>
+    <link rel="stylesheet" type="text/css" href="Style/index.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<!--    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E <link rel="preconnect " href="https://fonts.gstatic.com/" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+
+    .logo{grid-area:logo; }
+    .brandName{grid-area:brandName; }
+    .home{grid-area:home; }
+    .gallery{grid-area:gallery; }
+    .commissions{grid-area:commissions; }
+    .about{grid-area:about; }
+    .contactUs{grid-area:contactUs; }
+    .leftMainContent{grid-area:left;}
+    .middleMainContent{grid-area:paragraph; }
+    .rightMainContent{grid-area:right; }
+    .footer{grid-area:footer; }
+
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+            'logo brandName brandName home gallery commissions about contactUs'
+            'left left left paragraph paragraph right right right'
+            'left left left paragraph paragraph right right right'
+            'footer footer footer footer footer footer footer footer';
+
+    }
+    .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    </style>
+
 </head>
 <body>
+    <div class="grid-container">
+
+<!--        nav bar-->
+        <div class="logo">
+            <img style="width: 120px;height: 110px" src="Assest/logo.png">
+        </div>
+        <div class="brandName"><h1> Choke Stories</h1></div>
+
+        <div class="home"> <a href="">Home</a> </div>
+        <div class="gallery"><a href="">Gallery</a></div>
+        <div class="commissions"><a href="">Commissions</a></div>
+        <div class="about"><a href="">About</a></div>
+        <div class="contactUs"><a href="">Contact Us</a></div>
+
+<!--///////////////////////////////////////////////-->
+
+        <div class="leftMainContent">
+            <img
+                    style="width: 613px;height: 640px"
+                    src="Assest/Gallery/Pets/Pet4.jpg">
+        </div>
+        <div class="middleMainContent" >
+
+                Welcome to Chalk Stories! Chalk Stories showcases my passion for the natural world, through art.<br><br>
+                Browsing through the gallery, you will see original paintings ranging from colourful birds to much cherished pets.
+                All paintings were completed using soft and hard pastels, my preferred medium, due to the high pigment content and rich effects.<br><br>
+                Both originals and premium-quality giclée prints are available for sale. I also undertake commission work, whether pets or wildlife.
+                Feel free to browse the site,  if you have any questions, please drop me a line or give me a call.<br><br>
+                Enjoy!
+
+        </div>
+        <div class="rightMainContent">
+            <img  src="Assest/leftDesigned.png">
+        </div>
+
+<!--        footer-->
+        <div class="footer" style="background-color: #632531; color: azure; ">
+            <div class="fbIcon">
+
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></i></a>
+            </div>
+            <div class="instaIcon">
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"> </i></a>
+
+            </div>
+            <div class="footerName">
+                Choke Stories
+            </div>
+            <div class="footerEndName">
+                2019 by Chalk Stories. All rights reserved.
+            </div>
+<!--//////////////////////////////////////////////            -->
+
+        </div>
+    </div>
+
 
 </body>
 </html>

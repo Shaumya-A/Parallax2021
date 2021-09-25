@@ -1,0 +1,175 @@
+body{
+    margin: 0 0 0 0;
+    padding: 0;
+}
+.brandName {
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+    margin-top: 17px;
+    height: 110px;
+
+}
+
+.logo{
+    /*border: black solid;*/
+    margin-top: 20px;
+    margin-left:20px ;
+    height: 110px;
+
+}
+.home{
+    margin-top: 10px;
+    height: 110px;
+    margin-left: 258px;
+    text-align: center;
+    line-height: 150px;
+    border-bottom: black solid;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom-width: 2px;
+
+}
+.home a{
+    text-decoration: none;
+    color: black;
+}
+.home a:hover{
+    color: #f1c100;
+}
+.gallery{
+    margin-top: 10px;
+    height: 110px;
+    text-align: center;
+    border-bottom: black solid;
+    line-height: 150px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom-width: 2px;
+
+}
+.gallery a{
+    text-decoration: none;
+    color: black;
+}
+.gallery a:hover{
+    color: #f1c100;
+}
+.commissions{
+    margin-top: 10px;
+    height: 110px;
+    text-align: center;
+    border-bottom: black solid;
+    line-height: 150px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom-width: 2px;
+}
+.commissions a{
+    text-decoration: none;
+    color: black;
+}
+.commissions a:hover{
+    color: #f1c100;
+}
+.about{
+    margin-top: 10px;
+    height: 110px;
+    text-align: center;
+    border-bottom: black solid;
+    line-height: 150px;
+    margin-right: 0px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom-width: 2px;
+
+}
+.about a{
+    text-decoration: none;
+    color: black;
+}
+.about a:hover{
+    color: #f1c100;
+}
+.contactUs{
+    margin-top: 10px;
+    height: 110px;
+    text-align: center;
+    border-bottom: black solid;
+    border-left:20px ;
+    line-height: 150px;
+    margin-right: 150px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom-width: 2px;
+}
+.contactUs a{
+    text-decoration: none;
+    color: black;
+}
+.contactUs a:hover{
+    color: #f1c100;
+}
+.leftMainContent{
+    /*background-image: url("../Assest/Gallery/Pets/choc_lab_480.jpg");*/
+    width:613px ;
+    height:640px ;
+    margin-top: 40px;
+    margin-left: 38px;
+    background-repeat: no-repeat;
+}
+.middleMainContent{
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 550px;
+    height: 635px;
+    font-family: Quicksand;
+    font-size: 24px;
+    text-align: justify;
+}
+.rightMainContent{
+    margin-top: 40px;
+}
+.footer{
+    height: 170px;
+    margin-top: 100px;
+    margin-bottom: 0;
+
+}
+.fbIcon{
+    font-size: 60px;
+    float: left;
+    margin-left: 55px;
+    margin-top: 43px;
+}
+.fbIcon a{
+    color: aliceblue;
+}
+.fbIcon a:hover{
+    color: #f1c100;
+}
+.instaIcon{
+    font-size: 60px;
+    float: left;
+    margin-left: 48px;
+    margin-top: 43px;
+}
+.instaIcon a{
+    color: aliceblue;
+}
+.instaIcon a:hover{
+    color: #f1c100;
+}
+.footerName{
+    float: left;
+    margin-left: 576px;
+    margin-top: 43px;
+    font-size: 40px;
+    border-bottom: aliceblue solid;
+    font-family: 'Sacramento', cursive;
+}
+.footerEndName{
+    float: left;
+    margin-left: -180px;
+    margin-top: 120px;
+    font-size: 10px;
+}
