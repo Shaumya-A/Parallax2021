@@ -5,15 +5,16 @@
 .commissions{grid-area:commissions; }
 .about{grid-area:about; }
 .contactUs{grid-area:contactUs; }
+.about-content{grid-area: about-content;}
 .img-container{grid-area: img-container;}
-.commision-content{grid-area: commision-content;}
 .footer{grid-area:footer; }
 
 .grid-container{
     display: grid;
     grid-template-areas:
             'logo brandName brandName home gallery commissions about contactUs'
-            'img-container img-container img-container img-container commision-content commision-content commision-content commision-content'
+            'about-content about-content about-content about-content about-content about-content about-content about-content'
+            'img-container img-container img-container img-container img-container img-container img-container img-container'
             'footer footer footer footer footer footer footer footer';
 }
 .grid-container > div {
@@ -128,7 +129,7 @@
 }
 
 /*------------------Content-----------------------------------*/
-.img-commision {
+.img-about {
     width: 100%;
     height: 100%;
 }
@@ -137,34 +138,11 @@
     padding: 40px 130px;
 }
 
-.commision-content {
+.about-content {
     padding: 20px 50px;
     font-family: Quicksand;
-    font-size: 24px;
-    text-align: justify;
-}
-
-.btn-book {
-    background-color: #B5838D;
-    color: white;
-    text-align: center;
-    text-decoration: none;
     font-size: 32px;
-    font-family: "Comic Sans MS";
-    font-weight: bold;
-    cursor: pointer;
-    width: 360px;
-    height: 86px;
-    display: block;
-    border-radius: 20px;
-    margin: 30px 320px;
-}
-
-.btn-book:hover {
-    background-color: whitesmoke;
-    border-style: solid;
-    border-color: #B5838D;
-    color: #B5838D;
+    text-align: justify;
 }
 
 /*-------------------------footer---------------------------*/
