@@ -4,45 +4,44 @@
     <meta charset="UTF-8">
     <title>Gallery</title>
     <link rel="stylesheet" type="text/css" href="Style/gallery.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <script>
-        console.log(innerHeight);
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <script src="Scripts/gallery.js"></script>
 </head>
-<body>
+<body onload="Start()">
 <div class="grid-container">
     <div class="header">header</div>
     <div class="catergories">
-        <button class="button">Pet Potraits</button>
+        <button class="button" onclick="HandleSubmit('1')">Pet Potraits</button>
         <br>
-        <button class="button">Animals</button>
+        <button class="button" onclick="HandleSubmit('2')">Animals</button>
         <br>
-        <button class="button">Birds</button>
+        <button class="button" onclick="HandleSubmit('3')">Birds</button>
     </div>
     <div class="gallery-container">
         <div class="img-tab">
-            <img src="Assest/Gallery/Pets/black_lab_full_body_680.jpg" class="img" onclick="openModal();currentSlide(1)">
+            <img src="Assest/Gallery/Pets/Pet1.jpg" class="img" onclick="openModal();currentSlide(1)">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Animals/elvira-lopez-lesser-panda.jpg" class="img" onclick="openModal();currentSlide(2)">
+            <img src="Assest/Gallery/Animals/Animal8.jpg" class="img" onclick="openModal();currentSlide(2)">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Pets/tabby_cat_480.jpg" class="img" onclick="openModal();currentSlide(3)">
+            <img src="Assest/Gallery/Pets/Pet8.jpg" class="img" onclick="openModal();currentSlide(3)">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Animals/ambro-jordi-rabbit-and-butterflies-drawing-by-ambr0-dchl3nj-fullview.jpg" class="img" onclick="openModal();currentSlide(4)">
+            <img src="Assest/Gallery/Animals/Animal4.jpg" class="img" onclick="openModal();currentSlide(4)">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Birds/Bird.jpg" class="img" onclick="openModal();currentSlide(5)">
+            <img src="Assest/Gallery/Birds/Bird8.jpg" class="img" onclick="openModal();currentSlide(5)">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Pets/hamster_480.jpg" class="img" onclick="openModal();currentSlide(6)">
+            <img src="Assest/Gallery/Pets/Pet6.jpg" class="img" onclick="openModal();currentSlide(6)">
         </div>
         <div class="img-tab">
             <img src="Assest/Gallery/Birds/Bird4.jpg" class="img" onclick="openModal();currentSlide(7)">
         </div>
         <div class="img-tab">
-            <img src="Assest/Gallery/Pets/cocker_spaniel_body_680.jpg" class="img" onclick="openModal();currentSlide(8)">
+            <img src="Assest/Gallery/Pets/Pet5.jpg" class="img" onclick="openModal();currentSlide(8)">
         </div>
     </div>
     <div class="footer-div">Footer</div>
@@ -52,7 +51,7 @@
     <span class="close cursor" onclick="closeModal()">&times;</span>
     <div class="preview-content">
         <div class="content">
-            <img src="Assest/Gallery/Pets/black_lab_full_body_680.jpg" class="enlarg-img">
+            <img src="Assest/Gallery/Pets/Pet1.jpg" class="enlarg-img">
             <p class="description">
                 Size: 50cm x 35cm <br>
                 Original: Sold <br>
@@ -66,23 +65,23 @@
         </div>
         <div class="content">
             <h1>2</h1>
-            <img src="Assest/Gallery/Animals/elvira-lopez-lesser-panda.jpg" style="width:100%">
+            <img src="Assest/Gallery/Animals/Animal8.jpg" style="width:100%">
         </div>
         <div class="content">
             <h1>3</h1>
-            <img src="Assest/Gallery/Pets/tabby_cat_480.jpg" style="width:100%">
+            <img src="Assest/Gallery/Pets/Pet8.jpg" style="width:100%">
         </div>
         <div class="content">
             <h1>4</h1>
-            <img src="Assest/Gallery/Animals/ambro-jordi-rabbit-and-butterflies-drawing-by-ambr0-dchl3nj-fullview.jpg" style="width:100%">
+            <img src="Assest/Gallery/Animals/Animal4.jpg" style="width:100%">
         </div>
         <div class="content">
             <h1>5</h1>
-            <img src="Assest/Gallery/Birds/Bird.jpg" style="width:100%">
+            <img src="Assest/Gallery/Birds/Bird8.jpg" style="width:100%">
         </div>
         <div class="content">
             <h1>6</h1>
-            <img src="Assest/Gallery/Pets/hamster_480.jpg" style="width:100%">
+            <img src="Assest/Gallery/Pets/Pet6.jpg" style="width:100%">
         </div>
         <div class="content">
             <h1>7</h1>
@@ -90,7 +89,7 @@
         </div>
         <div class="content">
             <h1>8</h1>
-            <img src="Assest/Gallery/Pets/cocker_spaniel_body_680.jpg" style="width:100%">
+            <img src="Assest/Gallery/Pets/Pet5.jpg" style="width:100%">
         </div>
     </div>
 </div>
